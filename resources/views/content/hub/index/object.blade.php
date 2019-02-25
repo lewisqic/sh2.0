@@ -140,7 +140,7 @@
                             <div class="field-body">
                                 <div class="field">
                                     <div class="control">
-                                        <button class="button is-primary">
+                                        <button class="button is-success">
                                             <i class="fal fa-check"></i> Save
                                         </button>
                                     </div>
