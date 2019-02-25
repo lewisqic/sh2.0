@@ -399,10 +399,14 @@ body.sidebar-collapsed {
 }
 
 // Noty styles
+.noty_bar {
+    -webkit-font-smoothing: inherit;
+}
 .noty_theme__nest.noty_bar .noty_body {
     font-size: 16px;
     padding: 10px 15px;
     text-shadow: none;
+    font-weight: 400;
 }
 .noty_theme__nest.noty_type__alert,
 .noty_theme__nest.noty_type__notification {
@@ -435,6 +439,7 @@ body.sidebar-collapsed {
     color: #fff; }
 #noty_layout__center {
     width: 400px;
+    -webkit-font-smoothing: inherit;
     .noty_body, .noty_buttons {
         text-align: center;
     }
