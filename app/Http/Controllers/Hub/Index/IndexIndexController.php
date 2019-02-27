@@ -94,10 +94,6 @@ class IndexController extends Controller
         } else {
             exec('cd ' . base_path() . ' && node node_modules/cross-env/dist/bin/cross-env.js NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js --env.source=theme 2>&1', $output, $return_var);
         }
-        
-        s($return_var);
-        sd($output);
-
 
         if ( $return_var === 0 ) {
             output('success', 'Your theme settings have been saved');
