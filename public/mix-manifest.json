@@ -1,5 +1,5 @@
 {
-    "/js/hub.min.js": "/js/hub.min.js",
-    "/css/hub.min.css": "/css/hub.min.css",
-    "/js/vendor.min.js": "/js/vendor.min.js"
+    "/js/hub.js": "/js/hub.js",
+    "/css/hub.css": "/css/hub.css",
+    "/js/vendor.js": "/js/vendor.js"
 }

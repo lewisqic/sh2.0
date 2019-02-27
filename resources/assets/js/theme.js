@@ -24,6 +24,8 @@ class Theme {
         }
         // bind events
         this.bindEvents();
+        // show output
+        this.showOutput();
     }
 
     /**
@@ -47,6 +49,11 @@ class Theme {
             self.toggleSubmenu(e, $(this));
         });
 
+        // toggle object sidebar menu
+        $('.toggle-object-sidebar').on('click', function(e) {
+            self.toggleObjectSidebar(e, $(this));
+        });
+
         // show our help modal
         $('.help-wrapper a').on('click', function(e) {
             self.showHelpModal(e)
@@ -57,6 +64,16 @@ class Theme {
              self.hideHelpModal();
         });
 
+        // toggle our header menu when in reponsive mode
+        $('.header-wrapper .navbar-burger.right').on('click', function(e) {
+            self.toggleHeaderMenu();
+        });
+
+        // toggle our left sidebar menu when in responsive mode
+        $('.header-wrapper .navbar-burger.left').on('click', function(e) {
+            self.toggleSidebarMenu();
+        });
+
         // hide expanded menus on body click
         $(document).on('click', function (e) {
             self.hideAllExpanded(e, $(this));
@@ -64,10 +81,40 @@ class Theme {
 
     }
 
+    /**
+     * show our output text if it's set
+     */
+    showOutput() {
+        if ( config.output ) {
+            const output = JSON.parse(config.output);
+            if ( output.type && output.text ) {
+                const n = new Noty({
+                    type: output.type === 'danger' ? 'error' : output.type,
+                    text: output.text,
+                    timeout: 5000
+                }).show();
+            }
+        }
+    }
+
     /******************************************************
      * Begin individual methods
      ******************************************************/
 
+    /**
+     * toggle our header menu on responsive design
+     */
+    toggleHeaderMenu() {
+        $('.header-wrapper .navbar-burger, .header-wrapper .navbar-menu').toggleClass('is-active');
+    }
+
+    /**
+     * toggle our sidebar menu on responsive design
+     */
+    toggleSidebarMenu() {
+        $('.sidebar-wrapper').toggleClass('is-active');
+    }
+    
     /**
      * toggle a header dropdown
      */
@@ -108,6 +155,14 @@ class Theme {
                 $li.toggleClass('open');
             });
         }
+    }
+
+    /**
+     * toggle the object sidebar menu
+     */
+    toggleObjectSidebar(e, $this) {
+        e.preventDefault();
+        $this.closest('.object-wrapper').toggleClass('sidebar-collapsed');
     }
 
     /**

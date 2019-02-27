@@ -1,0 +1,16 @@
+/**
+Bulma Overrides
+ */
+$primary: #69cfdd !default;
+$success: #9DC470 !default;
+$link: $primary !default;
+$link-invert: #fff !default;
+
+/**
+Custom Theme Variables
+ */
+$sidebar: #4a5864 !default;
+$sidebar-dark: darken($sidebar, 9);
+$sidebar-width: 231px;
+$sidebar-width-collapsed: 51px;
+$content-bg: #f0f5f6;

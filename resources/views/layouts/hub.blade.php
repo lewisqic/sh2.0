@@ -16,13 +16,14 @@
         <nav class="navbar is-white">
 
             <div class="navbar-brand">
+                <div class="navbar-burger left">
+                    <i class="fal fa-bars fa-lg"></i>
+                </div>
                 <a class="navbar-item is-size-4" href="{{ url('hub') }}">
                     <i class="fa fa-claw-marks has-text-primary has-mr-10"></i> SimpleHub
                 </a>
-                <div class="navbar-burger burger" data-target="top_navbar">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="navbar-burger right" data-target="top_navbar">
+                    <i class="fal fa-bars fa-lg"></i>
                 </div>
             </div>
 
@@ -30,7 +31,7 @@
 
                 <div class="navbar-start">
 
-                    <a class="navbar-item toggle-sidebar" href="#">
+                    <a class="navbar-item toggle-sidebar is-hidden-touch" href="#">
                         <i class="fal fa-bars fa-lg"></i>
                     </a>
                     <div class="navbar-item">
@@ -44,8 +45,8 @@
                         </div>
                     </div>
                     <div class="navbar-item has-dropdown is-clickable icon-dropdown">
-                        <a class="navbar-link is-arrowless" href="#">
-                            <i class="fal fa-bell fa-lg"></i>
+                        <a class="navbar-link" href="#">
+                            <i class="fal fa-bell fa-lg"></i> <span class="is-hidden-desktop">Notifications</span>
                         </a>
                         <div class="navbar-dropdown animated fadeInDown">
                             <div class="navbar-item">
@@ -54,8 +55,8 @@
                         </div>
                     </div>
                     <div class="navbar-item has-dropdown is-clickable icon-dropdown">
-                        <a class="navbar-link is-arrowless" href="#">
-                            <i class="fal fa-heart fa-lg"></i>
+                        <a class="navbar-link" href="#">
+                            <i class="fal fa-heart fa-lg"></i> <span class="is-hidden-desktop">Favorite Pages</span>
                         </a>
                         <div class="navbar-dropdown animated fadeInDown">
                             <div class="navbar-item">
@@ -64,8 +65,8 @@
                         </div>
                     </div>
                     <div class="navbar-item has-dropdown is-clickable icon-dropdown">
-                        <a class="navbar-link is-arrowless" href="#">
-                            <i class="fal fa-sticky-note fa-lg"></i>
+                        <a class="navbar-link" href="#">
+                            <i class="fal fa-sticky-note fa-lg"></i> <span class="is-hidden-desktop">Sticky Notes</span>
                         </a>
                         <div class="navbar-dropdown animated fadeInDown">
                             <div class="navbar-item">
@@ -88,15 +89,18 @@
                     </div>--}}
                     <div class="navbar-item has-dropdown is-clickable role-menu">
                         <a class="navbar-link is-arrowless">
-                            <button class="button is-small is-secondary is-outlined">Role: Read Only {!! \Request::is('hub') ? '<small class="has-text-danger has-ml-4">(SuperAdmin)</small>' : '' !!}</button>
+                            <button class="button is-small is-secondary is-outlined is-hidden-touch">Role: Read Only {!! \Request::is('hub') ? '<small class="has-text-danger has-ml-4">(SuperAdmin)</small>' : '' !!}</button>
+                            <span class="is-hidden-desktop">
+                                Switch Role
+                            </span>
                         </a>
                         <div class="navbar-dropdown animated fadeInDown is-right">
-                            <div class="navbar-item has-text-primary">
+                            <div class="navbar-item has-text-primary is-hidden-touch">
                                 <i class="fal fa-user-lock fa-lg has-mr-10"></i> Switch Role
                             </div>
                             <hr class="navbar-divider">
                             <a class="navbar-item">
-                                Read Only
+                                Read Only <span class="is-hidden-desktop has-text-grey-light">(active)</span>
                             </a>
                             <a class="navbar-item">
                                 Master User

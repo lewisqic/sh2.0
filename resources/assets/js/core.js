@@ -68,12 +68,6 @@ class Core {
             }).show();
         });
 
-        var n = new Noty({
-            type: 'success',
-            text: 'This is an example success message!',
-            timeout: 3000
-        }).show();
-
         // allow link to submit a form
         $('a.submit-form').not('.confirm-click').on('click', function(e) {
             e.preventDefault();
@@ -141,6 +135,11 @@ class Core {
      * initiate vendor plugin functionality
      */
     vendors() {
+
+        // init our colorpicker library
+        $('.colorpicker').colorPicker({
+            animationSpeed: 0
+        });
 
     }
 

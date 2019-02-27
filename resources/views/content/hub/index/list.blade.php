@@ -55,12 +55,8 @@
                     <div class="field-body">
                         <div class="field">
                             <div class="control">
-                                <button class="button is-success">
-                                    <i class="fal fa-search"></i> Search
-                                </button>
-                                <a href="{{ url('hub') }}" class="button is-secondary">
-                                    Reset
-                                </a>
+                                <button class="button is-success"><i class="fal fa-search"></i> Search</button>
+                                <a href="{{ url('hub') }}" class="button is-secondary">Reset</a>
                             </div>
                         </div>
                     </div>

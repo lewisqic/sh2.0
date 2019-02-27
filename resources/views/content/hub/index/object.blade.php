@@ -21,13 +21,13 @@
     <div class="card">
         <div class="card-content">
 
-            <div class="columns object-wrapper">
+            <div class="columns is-desktop object-wrapper">
                 <div class="column">
 
                     <div class="object-content">
 
                         <div class="field is-horizontal has-mb-20">
-                            <div class="field-label"></div>
+                            <div class="field-label is-hidden-touch"></div>
                             <div class="field-body">
                                 <h2 class="is-font-22">Edit Contact</h2>
                             </div>
@@ -150,10 +150,14 @@
 
                     </div>
 
+                    <a href="#" class="toggle-object-sidebar"><i class="fal fa-bars fa-lg"></i></a>
+
                 </div>
-                <div class="column is-one-fifth">
+                <div class="column is-one-fifth-desktop">
 
                     <div class="object-sidebar">
+
+                        <a href="#" class="toggle-object-sidebar"><i class="fal fa-bars fa-lg"></i></a>
 
                         <ul>
                             <li class="parent">

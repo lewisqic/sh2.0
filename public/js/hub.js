@@ -169,12 +169,7 @@ function () {
             n.close();
           })]
         }).show();
-      });
-      var n = new Noty({
-        type: 'success',
-        text: 'This is an example success message!',
-        timeout: 3000
-      }).show(); // allow link to submit a form
+      }); // allow link to submit a form
 
       $('a.submit-form').not('.confirm-click').on('click', function (e) {
         e.preventDefault();
@@ -252,7 +247,12 @@ function () {
 
   }, {
     key: "vendors",
-    value: function vendors() {}
+    value: function vendors() {
+      // init our colorpicker library
+      $('.colorpicker').colorPicker({
+        animationSpeed: 0
+      });
+    }
     /**
      * setup form validation plugin
      */
@@ -334,7 +334,9 @@ function () {
       } // bind events
 
 
-      this.bindEvents();
+      this.bindEvents(); // show output
+
+      this.showOutput();
     }
     /**
      * bind all necessary events
@@ -355,6 +357,10 @@ function () {
 
       $('.has-submenu > a').on('click', function (e) {
         self.toggleSubmenu(e, $(this));
+      }); // toggle object sidebar menu
+
+      $('.toggle-object-sidebar').on('click', function (e) {
+        self.toggleObjectSidebar(e, $(this));
       }); // show our help modal
 
       $('.help-wrapper a').on('click', function (e) {
@@ -363,16 +369,61 @@ function () {
 
       $('.help-modal .modal-background, .help-modal .modal-close').on('click', function (e) {
         self.hideHelpModal();
+      }); // toggle our header menu when in reponsive mode
+
+      $('.header-wrapper .navbar-burger.right').on('click', function (e) {
+        self.toggleHeaderMenu();
+      }); // toggle our left sidebar menu when in responsive mode
+
+      $('.header-wrapper .navbar-burger.left').on('click', function (e) {
+        self.toggleSidebarMenu();
       }); // hide expanded menus on body click
 
       $(document).on('click', function (e) {
         self.hideAllExpanded(e, $(this));
       });
     }
+    /**
+     * show our output text if it's set
+     */
+
+  }, {
+    key: "showOutput",
+    value: function showOutput() {
+      if (config.output) {
+        var output = JSON.parse(config.output);
+
+        if (output.type && output.text) {
+          var n = new Noty({
+            type: output.type === 'danger' ? 'error' : output.type,
+            text: output.text,
+            timeout: 5000
+          }).show();
+        }
+      }
+    }
     /******************************************************
      * Begin individual methods
      ******************************************************/
 
+    /**
+     * toggle our header menu on responsive design
+     */
+
+  }, {
+    key: "toggleHeaderMenu",
+    value: function toggleHeaderMenu() {
+      $('.header-wrapper .navbar-burger, .header-wrapper .navbar-menu').toggleClass('is-active');
+    }
+    /**
+     * toggle our sidebar menu on responsive design
+     */
+
+  }, {
+    key: "toggleSidebarMenu",
+    value: function toggleSidebarMenu() {
+      $('.sidebar-wrapper').toggleClass('is-active');
+    }
     /**
      * toggle a header dropdown
      */
@@ -425,6 +476,16 @@ function () {
       }
     }
     /**
+     * toggle the object sidebar menu
+     */
+
+  }, {
+    key: "toggleObjectSidebar",
+    value: function toggleObjectSidebar(e, $this) {
+      e.preventDefault();
+      $this.closest('.object-wrapper').toggleClass('sidebar-collapsed');
+    }
+    /**
      * hide all expanded submenus
      */
 
@@ -473,10 +534,10 @@ $(function () {
 
 /***/ }),
 
-/***/ "./resources/assets/scss/core.scss":
-/*!*****************************************!*\
-  !*** ./resources/assets/scss/core.scss ***!
-  \*****************************************/
+/***/ "./resources/assets/scss/theme.scss":
+/*!******************************************!*\
+  !*** ./resources/assets/scss/theme.scss ***!
+  \******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -485,15 +546,15 @@ $(function () {
 /***/ }),
 
 /***/ 0:
-/*!************************************************************************************************************!*\
-  !*** multi ./resources/assets/js/core.js ./resources/assets/js/theme.js ./resources/assets/scss/core.scss ***!
-  \************************************************************************************************************/
+/*!*************************************************************************************************************!*\
+  !*** multi ./resources/assets/js/core.js ./resources/assets/js/theme.js ./resources/assets/scss/theme.scss ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/devin/Sites/SimpleHub2/laravel/resources/assets/js/core.js */"./resources/assets/js/core.js");
 __webpack_require__(/*! /Users/devin/Sites/SimpleHub2/laravel/resources/assets/js/theme.js */"./resources/assets/js/theme.js");
-module.exports = __webpack_require__(/*! /Users/devin/Sites/SimpleHub2/laravel/resources/assets/scss/core.scss */"./resources/assets/scss/core.scss");
+module.exports = __webpack_require__(/*! /Users/devin/Sites/SimpleHub2/laravel/resources/assets/scss/theme.scss */"./resources/assets/scss/theme.scss");
 
 
 /***/ })
