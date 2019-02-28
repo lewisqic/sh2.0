@@ -124,9 +124,6 @@
                             <a class="navbar-item">
                                 System Settings
                             </a>
-                            <a class="navbar-item">
-                                Time Clock
-                            </a>
                             <hr class="navbar-divider">
                             <a class="navbar-item has-text-danger">
                                 <i class="fal fa-power-off fa-lg has-mr-10"></i> Logout
@@ -151,6 +148,7 @@
             <div class="sidebar-wrapper">
 
                 <ul class="sidebar-menu">
+
                     <li class="has-submenu">
                         <a href="#">
                             <i class="fa fa-fw fa-newspaper"></i> <span class="animated fadeInLeft">Articles</span>
@@ -160,10 +158,98 @@
                                 <a href="#">Overview</a>
                             </li>
                             <li>
-                                <a href="#">List Articles</a>
+                                <a href="#">Advanced</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <i class="fa fa-fw fa-address-book"></i> <span class="animated fadeInLeft">Contacts</span>
+                        </a>
+                        <ul class="submenu animated fadeInLeft">
+                            <li>
+                                <a href="#">Overview</a>
                             </li>
                             <li>
-                                <a href="#">Article Groups</a>
+                                <a href="#">List Contacts</a>
+                            </li>
+                            <li>
+                                <a href="#">Advanced</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <i class="fa fa-fw fa-server"></i> <span class="animated fadeInLeft">Data</span>
+                        </a>
+                        <ul class="submenu animated fadeInLeft">
+                            <li>
+                                <a href="#">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#">Advanced</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <i class="fa fa-fw fa-chart-line"></i> <span class="animated fadeInLeft">Footprints</span>
+                        </a>
+                        <ul class="submenu animated fadeInLeft">
+                            <li>
+                                <a href="#">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#">Advanced</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <i class="fa fa-fw fa-file-alt"></i> <span class="animated fadeInLeft">Forms</span>
+                        </a>
+                        <ul class="submenu animated fadeInLeft">
+                            <li>
+                                <a href="#">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#">Advanced</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <i class="fa fa-fw fa-image"></i> <span class="animated fadeInLeft">Gallery</span>
+                        </a>
+                        <ul class="submenu animated fadeInLeft">
+                            <li>
+                                <a href="#">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#">Advanced</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <i class="fa fa-fw fa-envelope"></i> <span class="animated fadeInLeft">Mail</span>
+                        </a>
+                        <ul class="submenu animated fadeInLeft">
+                            <li>
+                                <a href="#">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#">Advanced</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <i class="fa fa-fw fa-bullhorn"></i> <span class="animated fadeInLeft">Marketing Campaigns</span>
+                        </a>
+                        <ul class="submenu animated fadeInLeft">
+                            <li>
+                                <a href="#">Overview</a>
                             </li>
                             <li>
                                 <a href="#">Advanced</a>
@@ -172,43 +258,14 @@
                     </li>
                     <li class="has-submenu active open">
                         <a href="#">
-                            <i class="fa fa-fw fa-address-book"></i> <span class="animated fadeInLeft">Contacts</span>
+                            <i class="fa fa-fw fa-building"></i> <span class="animated fadeInLeft">Property</span>
                         </a>
                         <ul class="submenu animated fadeInLeft">
                             <li>
                                 <a href="#">Overview</a>
                             </li>
                             <li class="active">
-                                <a href="#">List Contacts</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact Groups</a>
-                            </li>
-                            <li>
-                                <a href="#">Advanced</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="{{ url('hub/forms') }}">
-                            <i class="fa fa-fw fa-file-alt"></i> <span class="animated fadeInLeft">Forms</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ url('hub/mail') }}">
-                            <i class="fa fa-fw fa-envelope"></i> <span class="animated fadeInLeft">Mail</span>
-                        </a>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="#">
-                            <i class="fa fa-fw fa-building"></i> <span class="animated fadeInLeft">Properties</span>
-                        </a>
-                        <ul class="submenu animated fadeInLeft">
-                            <li>
-                                <a href="#">Overview</a>
-                            </li>
-                            <li>
-                                <a href="#">List Properties</a>
+                                <a href="{{ url('hub/property/listings/list') }}">Listings</a>
                             </li>
                             <li>
                                 <a href="#">Property Groups</a>
@@ -218,11 +275,33 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="{{ url('hub/thirdparty') }}">
-                            <i class="fa fa-fw fa-globe-americas"></i> <span class="animated fadeInLeft">Third Party Apps</span>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <i class="fa fa-fw fa-plug"></i> <span class="animated fadeInLeft">Third Party Apps</span>
                         </a>
+                        <ul class="submenu animated fadeInLeft">
+                            <li>
+                                <a href="#">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#">Advanced</a>
+                            </li>
+                        </ul>
                     </li>
+                    <li class="has-submenu">
+                        <a href="#">
+                            <i class="fa fa-fw fa-globe-americas"></i> <span class="animated fadeInLeft">Web Pages</span>
+                        </a>
+                        <ul class="submenu animated fadeInLeft">
+                            <li>
+                                <a href="#">Overview</a>
+                            </li>
+                            <li>
+                                <a href="#">Advanced</a>
+                            </li>
+                        </ul>
+                    </li>
+
                 </ul>
 
             </div>

@@ -53,6 +53,45 @@ class IndexController extends Controller
     }
 
     /**
+     * Show our property listings list
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function listingsList()
+    {
+        $data = [
+
+        ];
+        return view('content.hub.index.listings-list', $data);
+    }
+
+    /**
+     * Show our listing view
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function listingsView()
+    {
+        $data = [
+
+        ];
+        return view('content.hub.index.listings-view', $data);
+    }
+
+    /**
+     * Show our listing edit
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function listingsEdit()
+    {
+        $data = [
+
+        ];
+        return view('content.hub.index.listings-edit', $data);
+    }
+
+    /**
      * Show our theme settings page
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
