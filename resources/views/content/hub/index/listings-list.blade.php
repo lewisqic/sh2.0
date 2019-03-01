@@ -195,7 +195,7 @@
                             </div>
                             <div class="column">
 
-                                <div class="columns">
+                                <div class="columns static-fields">
                                     <div class="column">
 
                                         <div class="field is-horizontal has-mb-6">
@@ -262,7 +262,7 @@
                             </div>
                             <div class="column">
 
-                                <div class="columns">
+                                <div class="columns static-fields">
                                     <div class="column">
 
                                         <div class="field is-horizontal has-mb-6">
@@ -333,7 +333,7 @@
                             </div>
                             <div class="column">
 
-                                <div class="columns">
+                                <div class="columns static-fields">
                                     <div class="column">
 
                                         <div class="field is-horizontal has-mb-6">

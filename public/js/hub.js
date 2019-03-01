@@ -382,6 +382,9 @@ function () {
       $(document).on('click', function (e) {
         self.hideAllExpanded(e, $(this));
       });
+      $(window).scroll(function () {
+        self.applyFixedControls();
+      });
     }
     /**
      * show our output text if it's set
@@ -518,6 +521,21 @@ function () {
     key: "hideHelpModal",
     value: function hideHelpModal() {
       $('.help-modal').removeClass('is-active');
+    }
+    /**
+     * add fixed class to elements upon scroll
+     */
+
+  }, {
+    key: "applyFixedControls",
+    value: function applyFixedControls() {
+      if ($(window).scrollTop() > 148) {
+        $('body').addClass('has-fixed');
+        $('.can-be-fixed').addClass('fixed');
+      } else {
+        $('body').removeClass('has-fixed');
+        $('.can-be-fixed').removeClass('fixed');
+      }
     }
   }]);
 

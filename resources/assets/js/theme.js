@@ -79,6 +79,10 @@ class Theme {
             self.hideAllExpanded(e, $(this));
         });
 
+        $(window).scroll(function() {
+            self.applyFixedControls();
+        });
+
     }
 
     /**
@@ -190,6 +194,19 @@ class Theme {
      */
     hideHelpModal() {
         $('.help-modal').removeClass('is-active');
+    }
+
+    /**
+     * add fixed class to elements upon scroll
+     */
+    applyFixedControls() {
+        if ( $(window).scrollTop() > 148 ) {
+            $('body').addClass('has-fixed');
+            $('.can-be-fixed').addClass('fixed');
+        } else {
+            $('body').removeClass('has-fixed');
+            $('.can-be-fixed').removeClass('fixed');
+        }
     }
 
 }
