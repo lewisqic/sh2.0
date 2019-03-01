@@ -12,8 +12,8 @@
     </nav>
 
     <div class="card-actions can-be-fixed">
-        <button class="button is-success" data-save-form="#form_id_here"><i class="fal fa-check"></i> Save</button>
-        <a href="{{ url('hub/property/listings/edit') }}" class="button is-danger is-outlined confirm-click" data-text="Are you sure you want to delete this listing?"><i class="fal fa-trash-alt"></i> Delete Listing</a>
+        <button class="button is-success" data-save-form="#form_id_here"><i class="fal fa-check"></i> <span class="is-hidden-touch">Save</span></button>
+        <a href="{{ url('hub/property/listings/edit') }}" class="button is-danger is-outlined confirm-click" data-text="Are you sure you want to delete this listing?"><i class="fal fa-trash-alt"></i> <span class="is-hidden-touch">Delete Listing</span></a>
     </div>
     <h2 class="card-title can-be-fixed">
         <i class="fal fa-building"></i> Manage Listing

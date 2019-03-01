@@ -529,7 +529,9 @@ function () {
   }, {
     key: "applyFixedControls",
     value: function applyFixedControls() {
-      if ($(window).scrollTop() > 148) {
+      var $first = $('.content-wrapper .card:first');
+
+      if ($(window).scrollTop() > $first.offset().top && $('.can-be-fixed').length) {
         $('body').addClass('has-fixed');
         $('.can-be-fixed').addClass('fixed');
       } else {

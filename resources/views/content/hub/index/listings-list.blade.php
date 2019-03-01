@@ -11,7 +11,7 @@
     </nav>
 
     <div class="card-actions">
-        <a href="#" class="button is-success is-outlined toggle-content" data-toggle=".new-contact-wrapper"><i class="fal fa-plus-circle "></i> New Listing</a>
+        <a href="#" class="button is-success is-outlined toggle-content" data-toggle=".new-contact-wrapper"><i class="fal fa-plus-circle "></i> <span class="is-hidden-touch">New Listing</span></a>
     </div>
     <h2 class="card-title">
         <i class="fal fa-building"></i> Property Listings
@@ -181,7 +181,10 @@
                     <div class="card-header">
                         <a href="{{ url('hub/property/listings/view') }}">6532 N Descartes Dr Coeur d' Alene AL 83815</a>
                         <div class="labels">
-                            <span><strong>Created</strong> Feb 12th, 2019</span>
+                            <span>
+                                <strong>Created</strong> <span class="is-hidden-touch">Feb 12th, 2019</span><span class="is-hidden-desktop">01/12/19</span>
+                            </span>
+                            <br class="is-hidden-desktop">
                             <button class="button is-success is-outlined is-small">Live</button>
                             <button class="button is-outlined is-small">Not Featured</button>
                         </div>
@@ -247,8 +250,13 @@
                     <div class="card-header">
                         <a href="{{ url('hub/property/listings/view') }}">6532 N Descartes Dr Coeur d' Alene AL 83815</a>
                         <div class="labels">
-                            <span><strong>Created</strong> Jan 12th, 2019</span>
-                            <span><strong>Updated</strong> Jan 25th, 2019</span>
+                            <span>
+                                <strong>Created</strong> <span class="is-hidden-touch">Jan 12th, 2019</span><span class="is-hidden-desktop">01/12/19</span>
+                            </span>
+                            <span>
+                                <strong>Updated</strong> <span class="is-hidden-touch">Jan 25th, 2019</span><span class="is-hidden-desktop">01/25/19</span>
+                            </span>
+                            <br class="is-hidden-desktop">
                             <button class="button is-outlined is-small">Draft</button>
                             <button class="button is-outlined is-small">Not Featured</button>
                         </div>
@@ -318,8 +326,13 @@
                     <div class="card-header">
                         <a href="{{ url('hub/property/listings/view') }}">6532 N Descartes Dr Coeur d' Alene AL 83815</a>
                         <div class="labels">
-                            <span><strong>Created</strong> Dec 12th, 2018</span>
-                            <span><strong>Updated</strong> Dec 25th, 2018</span>
+                            <span>
+                                <strong>Created</strong> <span class="is-hidden-touch">Dec 12th, 2018</span><span class="is-hidden-desktop">12/12/18</span>
+                            </span>
+                            <span>
+                                <strong>Updated</strong> <span class="is-hidden-touch">Dec 25th, 2018</span><span class="is-hidden-desktop">12/25/18</span>
+                            </span>
+                            <br class="is-hidden-desktop">
                             <button class="button is-outlined is-small">Draft</button>
                             <button class="button is-primary is-outlined is-small">Featured</button>
                         </div>

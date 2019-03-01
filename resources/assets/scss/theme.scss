@@ -778,4 +778,21 @@ RESPONSIVE
         }
     }
 
+    // resource items resource
+    .listing-items-wrapper {
+
+        .card {
+            .card-header {
+                display: block;
+                .labels {
+                    position: relative;
+                    display: block;
+                    text-align: center;
+                    top: auto;
+                    right: auto;
+                }
+            }
+        }
+    }
+
 }

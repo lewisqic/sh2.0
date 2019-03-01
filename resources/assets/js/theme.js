@@ -200,7 +200,8 @@ class Theme {
      * add fixed class to elements upon scroll
      */
     applyFixedControls() {
-        if ( $(window).scrollTop() > 148 ) {
+        let $first = $('.content-wrapper .card:first');
+        if ( $(window).scrollTop() > $first.offset().top && $('.can-be-fixed').length ) {
             $('body').addClass('has-fixed');
             $('.can-be-fixed').addClass('fixed');
         } else {

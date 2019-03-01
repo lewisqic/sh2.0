@@ -23762,5 +23762,17 @@ RESPONSIVE
   .object-wrapper .object-sidebar ul {
     margin-top: 0;
   }
+
+  .listing-items-wrapper .card .card-header {
+    display: block;
+  }
+
+  .listing-items-wrapper .card .card-header .labels {
+    position: relative;
+    display: block;
+    text-align: center;
+    top: auto;
+    right: auto;
+  }
 }
 
