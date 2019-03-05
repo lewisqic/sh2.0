@@ -31,12 +31,12 @@ class IndexController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function showList()
+    public function showDashboard()
     {
         $data = [
 
         ];
-        return view('content.hub.index.list', $data);
+        return view('content.hub.index.dashboard', $data);
     }
 
     /**

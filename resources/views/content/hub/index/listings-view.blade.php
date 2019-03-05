@@ -44,7 +44,7 @@
                                 <p>
                                     <strong>Available</strong>: June 16th, 2019
                                 </p>
-                                <p class="is-font-14">
+                                <p class="has-font-14">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum pretium fermentum. Sed dapibus sagittis gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
                                 </p>
 

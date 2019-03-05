@@ -29,7 +29,7 @@
                         <div class="field is-horizontal has-mb-20">
                             <div class="field-label is-hidden-touch"></div>
                             <div class="field-body">
-                                <h2 class="is-font-22">Edit Contact</h2>
+                                <h2 class="has-font-22">Edit Contact</h2>
                             </div>
                         </div>
 

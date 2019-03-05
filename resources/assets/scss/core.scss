@@ -31,7 +31,7 @@ Bulma Style Helpers
 .is-display-block { display: block; }
 .is-display-inline-block { display: inline-block; }
 @for $i from 10 through 50 {
-    .is-font-#{$i} { font-size: #{$i}px; }
+    .has-font-#{$i} { font-size: #{$i}px; }
 }
 $i: 0;
 @while $i <= 30 {

@@ -34,7 +34,8 @@ Bulma Style Helpers
 .is-display-block { display: block; }
 .is-display-inline-block { display: inline-block; }
 @for $i from 10 through 50 {
-    .is-font-#{$i} { font-size: #{$i}px; }
+    .has-font-#{$i} { font-size: #{$i}px !important; }
+    .has-lh-#{$i} { line-height: #{$i}px !important; }
 }
 $i: 0;
 @while $i <= 30 {
@@ -54,6 +55,9 @@ $i: 0;
     .has-py-#{$i} { padding-top: #{$i}px !important; padding-bottom: #{$i}px !important; }
     $i: $i + 2;
 }
+.has-ml-auto { margin-left: auto !important; }
+.has-mr-auto { margin-right: auto !important; }
+.has-background-content-bg { background: $content-bg !important; }
 
 /**
 Bulma Overrides
@@ -172,6 +176,9 @@ h4 { font-size: 20px; }
 h5 { font-size: 18px; }
 h6 { font-size: 16px; }
 h7 { font-size: 14px; }
+strong {
+    font-weight: 600;
+}
 .card p {
     margin-bottom: 5px;
 }
@@ -447,6 +454,7 @@ CONTENT
             margin-left: 3px;
         }
         .tools-wrapper {
+            line-height: 0;
             & > a {
                 margin: 0 10px;
                 font-size: 20px;

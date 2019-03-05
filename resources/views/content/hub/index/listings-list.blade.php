@@ -203,7 +203,7 @@
 
                                         <div class="field is-horizontal has-mb-6">
                                             <div class="field-label"></div>
-                                            <div class="field-body is-font-18 has-text-grey-light">Listing Details</div>
+                                            <div class="field-body has-font-18 has-text-grey-light">Listing Details</div>
                                         </div>
                                         <div class="field is-horizontal">
                                             <div class="field-label">Category</div>
@@ -223,7 +223,7 @@
 
                                         <div class="field is-horizontal has-mb-6">
                                             <div class="field-label"></div>
-                                            <div class="field-body is-font-18 has-text-grey-light">Custom Fields</div>
+                                            <div class="field-body has-font-18 has-text-grey-light">Custom Fields</div>
                                         </div>
                                         <div class="field is-horizontal">
                                             <div class="field-label">Overview Field</div>
@@ -275,7 +275,7 @@
 
                                         <div class="field is-horizontal has-mb-6">
                                             <div class="field-label"></div>
-                                            <div class="field-body is-font-18 has-text-grey-light">Listing Details</div>
+                                            <div class="field-body has-font-18 has-text-grey-light">Listing Details</div>
                                         </div>
                                         <div class="field is-horizontal">
                                             <div class="field-label">Category</div>
@@ -295,7 +295,7 @@
 
                                         <div class="field is-horizontal has-mb-6">
                                             <div class="field-label"></div>
-                                            <div class="field-body is-font-18 has-text-grey-light">Custom Fields</div>
+                                            <div class="field-body has-font-18 has-text-grey-light">Custom Fields</div>
                                         </div>
                                         <div class="field is-horizontal">
                                             <div class="field-label">Overview Field</div>
@@ -311,7 +311,7 @@
                                         </div>
                                         <div class="field is-horizontal has-mb-0">
                                             <div class="field-label"></div>
-                                            <div class="field-body is-font-14"><a href="#">show more <i class="fal fa-angle-down"></i></a></div>
+                                            <div class="field-body has-font-14"><a href="#">show more <i class="fal fa-angle-down"></i></a></div>
                                         </div>
 
                                     </div>
@@ -351,7 +351,7 @@
 
                                         <div class="field is-horizontal has-mb-6">
                                             <div class="field-label"></div>
-                                            <div class="field-body is-font-18 has-text-grey-light">Listing Details</div>
+                                            <div class="field-body has-font-18 has-text-grey-light">Listing Details</div>
                                         </div>
                                         <div class="field is-horizontal">
                                             <div class="field-label">Category</div>
@@ -371,7 +371,7 @@
 
                                         <div class="field is-horizontal has-mb-6">
                                             <div class="field-label"></div>
-                                            <div class="field-body is-font-18 has-text-grey-light">Custom Fields</div>
+                                            <div class="field-body has-font-18 has-text-grey-light">Custom Fields</div>
                                         </div>
                                         <div class="field is-horizontal">
                                             <div class="field-label">Overview Field</div>
@@ -387,7 +387,7 @@
                                         </div>
                                         <div class="field is-horizontal has-mb-0">
                                             <div class="field-label"></div>
-                                            <div class="field-body is-font-14"><a href="#">show more <i class="fal fa-angle-down"></i></a></div>
+                                            <div class="field-body has-font-14"><a href="#">show more <i class="fal fa-angle-down"></i></a></div>
                                         </div>
 
                                     </div>

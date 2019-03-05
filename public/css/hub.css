@@ -21834,168 +21834,332 @@ Bulma Style Helpers
   display: inline-block;
 }
 
-.is-font-10 {
-  font-size: 10px;
+.has-font-10 {
+  font-size: 10px !important;
 }
 
-.is-font-11 {
-  font-size: 11px;
+.has-lh-10 {
+  line-height: 10px !important;
 }
 
-.is-font-12 {
-  font-size: 12px;
+.has-font-11 {
+  font-size: 11px !important;
 }
 
-.is-font-13 {
-  font-size: 13px;
+.has-lh-11 {
+  line-height: 11px !important;
 }
 
-.is-font-14 {
-  font-size: 14px;
+.has-font-12 {
+  font-size: 12px !important;
 }
 
-.is-font-15 {
-  font-size: 15px;
+.has-lh-12 {
+  line-height: 12px !important;
 }
 
-.is-font-16 {
-  font-size: 16px;
+.has-font-13 {
+  font-size: 13px !important;
 }
 
-.is-font-17 {
-  font-size: 17px;
+.has-lh-13 {
+  line-height: 13px !important;
 }
 
-.is-font-18 {
-  font-size: 18px;
+.has-font-14 {
+  font-size: 14px !important;
 }
 
-.is-font-19 {
-  font-size: 19px;
+.has-lh-14 {
+  line-height: 14px !important;
 }
 
-.is-font-20 {
-  font-size: 20px;
+.has-font-15 {
+  font-size: 15px !important;
 }
 
-.is-font-21 {
-  font-size: 21px;
+.has-lh-15 {
+  line-height: 15px !important;
 }
 
-.is-font-22 {
-  font-size: 22px;
+.has-font-16 {
+  font-size: 16px !important;
 }
 
-.is-font-23 {
-  font-size: 23px;
+.has-lh-16 {
+  line-height: 16px !important;
 }
 
-.is-font-24 {
-  font-size: 24px;
+.has-font-17 {
+  font-size: 17px !important;
 }
 
-.is-font-25 {
-  font-size: 25px;
+.has-lh-17 {
+  line-height: 17px !important;
 }
 
-.is-font-26 {
-  font-size: 26px;
+.has-font-18 {
+  font-size: 18px !important;
 }
 
-.is-font-27 {
-  font-size: 27px;
+.has-lh-18 {
+  line-height: 18px !important;
 }
 
-.is-font-28 {
-  font-size: 28px;
+.has-font-19 {
+  font-size: 19px !important;
 }
 
-.is-font-29 {
-  font-size: 29px;
+.has-lh-19 {
+  line-height: 19px !important;
 }
 
-.is-font-30 {
-  font-size: 30px;
+.has-font-20 {
+  font-size: 20px !important;
 }
 
-.is-font-31 {
-  font-size: 31px;
+.has-lh-20 {
+  line-height: 20px !important;
 }
 
-.is-font-32 {
-  font-size: 32px;
+.has-font-21 {
+  font-size: 21px !important;
 }
 
-.is-font-33 {
-  font-size: 33px;
+.has-lh-21 {
+  line-height: 21px !important;
 }
 
-.is-font-34 {
-  font-size: 34px;
+.has-font-22 {
+  font-size: 22px !important;
 }
 
-.is-font-35 {
-  font-size: 35px;
+.has-lh-22 {
+  line-height: 22px !important;
 }
 
-.is-font-36 {
-  font-size: 36px;
+.has-font-23 {
+  font-size: 23px !important;
 }
 
-.is-font-37 {
-  font-size: 37px;
+.has-lh-23 {
+  line-height: 23px !important;
 }
 
-.is-font-38 {
-  font-size: 38px;
+.has-font-24 {
+  font-size: 24px !important;
 }
 
-.is-font-39 {
-  font-size: 39px;
+.has-lh-24 {
+  line-height: 24px !important;
 }
 
-.is-font-40 {
-  font-size: 40px;
+.has-font-25 {
+  font-size: 25px !important;
 }
 
-.is-font-41 {
-  font-size: 41px;
+.has-lh-25 {
+  line-height: 25px !important;
 }
 
-.is-font-42 {
-  font-size: 42px;
+.has-font-26 {
+  font-size: 26px !important;
 }
 
-.is-font-43 {
-  font-size: 43px;
+.has-lh-26 {
+  line-height: 26px !important;
 }
 
-.is-font-44 {
-  font-size: 44px;
+.has-font-27 {
+  font-size: 27px !important;
 }
 
-.is-font-45 {
-  font-size: 45px;
+.has-lh-27 {
+  line-height: 27px !important;
 }
 
-.is-font-46 {
-  font-size: 46px;
+.has-font-28 {
+  font-size: 28px !important;
 }
 
-.is-font-47 {
-  font-size: 47px;
+.has-lh-28 {
+  line-height: 28px !important;
 }
 
-.is-font-48 {
-  font-size: 48px;
+.has-font-29 {
+  font-size: 29px !important;
 }
 
-.is-font-49 {
-  font-size: 49px;
+.has-lh-29 {
+  line-height: 29px !important;
 }
 
-.is-font-50 {
-  font-size: 50px;
+.has-font-30 {
+  font-size: 30px !important;
+}
+
+.has-lh-30 {
+  line-height: 30px !important;
+}
+
+.has-font-31 {
+  font-size: 31px !important;
+}
+
+.has-lh-31 {
+  line-height: 31px !important;
+}
+
+.has-font-32 {
+  font-size: 32px !important;
+}
+
+.has-lh-32 {
+  line-height: 32px !important;
+}
+
+.has-font-33 {
+  font-size: 33px !important;
+}
+
+.has-lh-33 {
+  line-height: 33px !important;
+}
+
+.has-font-34 {
+  font-size: 34px !important;
+}
+
+.has-lh-34 {
+  line-height: 34px !important;
+}
+
+.has-font-35 {
+  font-size: 35px !important;
+}
+
+.has-lh-35 {
+  line-height: 35px !important;
+}
+
+.has-font-36 {
+  font-size: 36px !important;
+}
+
+.has-lh-36 {
+  line-height: 36px !important;
+}
+
+.has-font-37 {
+  font-size: 37px !important;
+}
+
+.has-lh-37 {
+  line-height: 37px !important;
+}
+
+.has-font-38 {
+  font-size: 38px !important;
+}
+
+.has-lh-38 {
+  line-height: 38px !important;
+}
+
+.has-font-39 {
+  font-size: 39px !important;
+}
+
+.has-lh-39 {
+  line-height: 39px !important;
+}
+
+.has-font-40 {
+  font-size: 40px !important;
+}
+
+.has-lh-40 {
+  line-height: 40px !important;
+}
+
+.has-font-41 {
+  font-size: 41px !important;
+}
+
+.has-lh-41 {
+  line-height: 41px !important;
+}
+
+.has-font-42 {
+  font-size: 42px !important;
+}
+
+.has-lh-42 {
+  line-height: 42px !important;
+}
+
+.has-font-43 {
+  font-size: 43px !important;
+}
+
+.has-lh-43 {
+  line-height: 43px !important;
+}
+
+.has-font-44 {
+  font-size: 44px !important;
+}
+
+.has-lh-44 {
+  line-height: 44px !important;
+}
+
+.has-font-45 {
+  font-size: 45px !important;
+}
+
+.has-lh-45 {
+  line-height: 45px !important;
+}
+
+.has-font-46 {
+  font-size: 46px !important;
+}
+
+.has-lh-46 {
+  line-height: 46px !important;
+}
+
+.has-font-47 {
+  font-size: 47px !important;
+}
+
+.has-lh-47 {
+  line-height: 47px !important;
+}
+
+.has-font-48 {
+  font-size: 48px !important;
+}
+
+.has-lh-48 {
+  line-height: 48px !important;
+}
+
+.has-font-49 {
+  font-size: 49px !important;
+}
+
+.has-lh-49 {
+  line-height: 49px !important;
+}
+
+.has-font-50 {
+  font-size: 50px !important;
+}
+
+.has-lh-50 {
+  line-height: 50px !important;
 }
 
 .has-m-0 {
@@ -22958,6 +23122,18 @@ Bulma Style Helpers
   padding-bottom: 30px !important;
 }
 
+.has-ml-auto {
+  margin-left: auto !important;
+}
+
+.has-mr-auto {
+  margin-right: auto !important;
+}
+
+.has-background-content-bg {
+  background: #f0f5f6 !important;
+}
+
 /**
 Bulma Overrides
  */
@@ -23122,6 +23298,10 @@ h6 {
 
 h7 {
   font-size: 14px;
+}
+
+strong {
+  font-weight: 600;
 }
 
 .card p {
@@ -23421,6 +23601,10 @@ CONTENT
 .content-wrapper .card-title > i {
   margin-right: 5px;
   margin-left: 3px;
+}
+
+.content-wrapper .card-title .tools-wrapper {
+  line-height: 0;
 }
 
 .content-wrapper .card-title .tools-wrapper > a {

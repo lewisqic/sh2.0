@@ -6,7 +6,7 @@
  */
 Route::group(['prefix' => 'hub', 'middleware' => [/*'auth:hub'*/], 'namespace' => 'Hub'], function() {
 
-    Route::get('/', ['uses' => 'Index\IndexController@showList']);
+    Route::get('/', ['uses' => 'Index\IndexController@showDashboard']);
     Route::get('object', ['uses' => 'Index\IndexController@showObject']);
 
     Route::get('property/listings/list', ['uses' => 'Index\IndexController@listingsList']);
